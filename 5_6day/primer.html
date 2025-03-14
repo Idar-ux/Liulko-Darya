@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пример</title>
+</head>
+
+<body>
+    <h1 align="center">Формы</h1>
+
+    <hr color="black" size="3">
+
+    <h3>Создание Web-форм</h3>
+
+    <code>
+        &lt;form id="my_form" name="user_data" <br>
+        method="post|get" action="form.php"&gt;<br>
+        &lt;теги, формирующие элементы управления&gt;<br>
+        &lt;/form&gt;
+    </code>
+
+    <hr color="black" size="2">
+
+    <h3>Тег &lt;FIELDSET&gt;. Набор полей</h3>
+
+    <code>
+        &lt;fieldset&gt;<br>
+        &lt;legend&gt;текст заголовка&lt;/legend&gt;<br>
+        &lt;элементы управления, объединяемые в группу&gt;<br>
+        &lt;/fieldset&gt;
+    </code>
+
+    <br><br>
+
+    <fieldset>
+        <legend>текст заголовка</legend>
+        <элементы управления, объединяемые в группу>
+    </fieldset>
+
+    <hr color="black" size="2">
+
+    <h3>Тег &lt;LABEL&gt;. Надписи</h3>
+
+    <code>
+        &lt;lable <br>
+        &nbsp;&nbsp;for=“id элемента управления, к которому <br>
+        &nbsp;&nbsp;относится надпись"  <br>
+        &gt; текст надписи: &lt;/lable&gt;   <br>
+        <br>
+        &lt;элемент управления id=“id элемента     <br>
+        управления, к которому относится    <br>
+        надпись”&gt;   <br>
+    </code>
+    <hr>
+    <code>
+        &lt;lable> <br>
+        &nbsp;&nbsp;Check: &lt;input type=“checkbox" name=“box"&gt;  <br>
+        &lt;/lable&gt; <br>
+    </code>
+    <hr>
+    <label>
+        Check:<input type="checkbox" name="box">
+    </label>
+    <hr>
+    <code>
+        &lt;lable for="passwd">Пароль:&lt;/lable&gt;     <br>
+        &lt;input type="password" id="passwd" name="password" size="25"&gt;  <br>
+    </code>
+    <hr>
+    <label for="passwd">Пароль:</label>
+    <input type="password" id="passwd" name="password" size="25">
+    <hr>
+    <code>
+        &lt;input type="password" id="passwd" name="password" size="25"&gt;  <br>
+        &lt;lable for="passwd"&gt; - пароль&lt;/lable&gt;
+    </code>
+    <hr>
+    <input type="password" id="passwd" name="password" size="25">
+    <label for="passwd">- пароль</label>
+
+    <hr color="black" size="2">
+
+    <h3>Поля ввода/выбора данных</h3>
+
+    <code>
+        &lt;input <br>
+        &nbsp;&nbsp;tipe="text“ <br>
+        &nbsp;&nbsp;name=“&lt;название переменной&gt;”    <br>
+        &nbsp;&nbsp;value="&lt;изначальное значение&gt;"  <br>
+        &nbsp;&nbsp;maxlength="&lt;максимальное количество символов&gt;"  <br>
+        &nbsp;&nbsp;disabled    <br>
+        &nbsp;&nbsp;readonly    <br>
+        &nbsp;&nbsp;tabindex="&lt;номер в порядке обхода&gt;" <br>
+        &nbsp;&nbsp;autofocus &lt;!--Может быть только один--&gt; <br>
+        &gt;
+    </code>
+
+    <hr color="black" size="2">
+
+    <h3>Атрибуты &lt;INPUT&gt. Password</h3>
+
+    <code>
+        &lt;label for=“login”&gt;Имя: &lt;/label&gt;    <br>
+        &lt;INPUT TYPE="text" ID="login" NAME="login" AUTOFOCUS&gt; <br>
+        &lt;label for=“pass”&gt; Пароль: &lt;/label&gt; <br>
+        &lt;INPUT TYPE="password" ID="pass" NAME="password"&gt;
+    </code>
+    <hr>
+    <label for=“login”>Имя: </label>
+    <input tipe="text" id="login" name="login" autofocus>
+    <label for=“pass”> Пароль: </label>
+    <INPUT tipe="password" id="pass" name="password">
+    
+    <hr color="black" size="2">
+
+    <h3>Атрибуты &lt;INPUT&gt;. Checkbox</h3>
+
+    <code>
+        &lt;label&gt;   <br>
+        &nbsp;&nbsp;&lt;input type="checkbox" name=“val_1" id="chbox1" checked&gt; 1   <br>
+        &lt;/label&gt;   <br>
+        &lt;label&gt;   <br>
+        &nbsp;&nbsp;&lt;input type="checkbox" name="val_2" id="chbox2"&gt; 2   <br>
+        &lt;/label&gt;   <br>
+    </code>
+    <hr>
+    <label>
+        <input type="checkbox" name=“val_1" id="chbox1" checked> 1
+    </label>
+    <label>
+        <input type="checkbox" name="val_2" id="chbox2"> 2
+    </label>
+    <hr>
+    <code>
+        &lt;label&gt;   <br>
+        &nbsp;&nbsp;&lt;input type="checkbox" name="hobby[]"&gt; check1   <br>
+        &lt;/label&gt;&lt;br&gt;   <br>
+        &lt;label&gt;   <br>
+        &nbsp;&nbsp;&lt;input type="checkbox" name="hobby[]"&gt; check2   <br>
+        &lt;/label>&lt;br&gt;   <br>
+        &lt;label&gt;   <br>
+        &nbsp;&nbsp;&lt;input type="checkbox" name="hobby[]"&gt; check3   <br>
+        &lt;/label>&lt;br&gt;
+    </code>
+    <hr>
+    <label>
+        <input type="checkbox" name="hobby[]"> check1
+    </label><br>
+    <label>
+        <input type="checkbox" name="hobby[]"> check2
+    </label><br>
+    <label>
+        <input type="checkbox" name="hobby[]"> check3
+    </label><br>
+
+    <hr color="black" size="2">
+
+    <h3>Атрибуты &lt;INPUT&gt;. Checkbox</h3>
+
+</body>
+</html>
