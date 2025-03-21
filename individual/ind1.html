@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Индивидуальное задание 1</title>
+    <style>
+        .header {
+            font-family: serif;
+            font-size: 32px;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2px;
+        }
+        .s{ font-size: 28px; }
+        .k{ font-size: 26px; }
+        .i{ font-size: 24px; }
+        .small { font-size: 18px; }
+        .letter { display: inline-block; }
+        .big-red-italic {
+            font-size: 24px;
+            color: red;
+            font-style: italic;
+        }
+        .right-aligned {
+            text-align: right;
+            font-size: 20px;
+        }
+        pre {
+            font-family: monospace;
+            font-size: 16px;
+        }
+        .rtl {
+            direction: rtl;
+            unicode-bidi: bidi-override;
+        }
+        .strikethrough {
+            text-decoration: line-through;
+        }
+        .center-arial {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            font-size: 14px;
+        }
+        h2 {
+            font-size: 18px;
+        }
+        .colored span:nth-child(odd) {
+            color: blue;
+        }
+        .colored span:nth-child(even) {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="header">
+        <span class="letter" style="color: red;">A</span>
+        <span class="letter s" style="color: blue;">S</span>
+        <span class="letter k" style="color: green;">K</span>
+        <span class="letter i" style="color: orange;">I</span>
+        <span class="letter small" style="color: purple; position: relative; top: 5px;">N</span>
+        <span class="letter small" style="color: teal; position: relative; top: 5px;">G</span>
+        &nbsp;
+        <span class="letter" style="color: brown; ">t</span>
+        <span class="letter" style="color: pink;"><sup>h</sup></span>
+        <span class="letter" style="color: darkcyan;">e</span>
+        <span class="letter" style="color: magenta; margin-left: 10px;">W</span>
+        <span class="letter" style="color: limegreen;"><sub>a</sub></span>
+        <span class="letter" style="color: navy;"><sub>y</sub></span>
+    </h1>
+
+    <p class="big-red-italic">— Excuse me, <pre>can you tell me where Prater Street is, please?</pre></p>
+
+    <p class="right-aligned colored">— <span>Take</span> <span>the</span> <span>second</span> <span>on</span>
+    <span>the</span> <span>left</span> <span>and</span> <span>then</span> <span>ask</span> <span>again.</span></p>
+
+    <p class="rtl">— Is it far?</p>
+
+    <p>— <span class="strikethrough">No, it's only<br> about five minutes' walk.</span></p>
+
+    <p class="center-arial">—Thank you.</p>
+
+    <h2>— That's OK.</h2>
+
+
+</body>
+</html>
